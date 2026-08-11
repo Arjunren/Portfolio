@@ -60,13 +60,15 @@
                 </div>
             </div>
             <!-- Window Body -->
+            <!-- FIX: Replaced h-40 sm:h-56 with h-auto min-h-[12rem] sm:min-h-[14rem] -->
             <div
-                class="p-5 sm:p-8 bg-white dark:bg-black font-mono text-sm sm:text-base h-40 sm:h-56 flex flex-col justify-start relative transition-colors shadow-inner">
-                <div class="flex items-end">
+                class="p-5 sm:p-8 bg-white dark:bg-black font-mono text-sm sm:text-base h-auto min-h-[12rem] sm:min-h-[14rem] flex flex-col justify-start relative transition-colors shadow-inner">
+                <div class="flex items-end flex-wrap"> <!-- Added flex-wrap just in case -->
                     <div id="typewriter-text"
                         class="whitespace-pre-wrap leading-relaxed text-blue-600 dark:text-green-500"></div>
                     <span id="typewriter-cursor"
-                        class="inline-block w-2.5 h-5 sm:h-6 bg-blue-600 dark:bg-green-500 animate-pulse ml-1 mb-0.5"></span>
+                        class="inline-block w-2.5 h-5 sm:h-6 bg-blue-600 dark:bg-green-500 animate-pulse ml-1 mb-0.5 flex-shrink-0"></span>
+                    <!-- Added flex-shrink-0 to prevent cursor from squishing -->
                 </div>
             </div>
         </div>
@@ -924,7 +926,7 @@
                             <div
                                 class="bg-white dark:bg-transparent p-4 rounded-xl border border-transparent group-hover:bg-gray-50 dark:group-hover:bg-[#111] group-hover:border-gray-200 dark:group-hover:border-gray-800 transition-colors">
                                 <div class="flex flex-col xl:flex-row xl:justify-between xl:items-center mb-1 gap-2">
-                                    <h3 class="font-bold text-gray-800 dark:text-gray-200 text-sm">Technical Support
+                                    <h3 class="font-bold text-gray-800 dark:text-gray-200 text-sm">Technical IT Support
                                     </h3>
                                     <span
                                         class="text-[10px] font-mono text-gray-400 dark:text-gray-500 w-fit">2023</span>
@@ -1057,9 +1059,17 @@
             const typewriterElement = document.getElementById('typewriter-text');
             const introTitle = document.getElementById('intro-title');
 
-            // FIX: Force text to wrap responsively on mobile screens
+            // FIX: Make text smaller on mobile, wrap properly, and allow scrolling if it overflows
             if (typewriterElement) {
-                typewriterElement.classList.add('whitespace-pre-wrap', 'break-words');
+                typewriterElement.classList.add(
+                    'whitespace-pre-wrap',
+                    'break-words',
+                    'text-xs',        // Smaller text on mobile
+                    'sm:text-sm',     // Normal text on larger screens
+                    'overflow-y-auto',// Allows scrolling if it still overflows
+                    'max-h-[60vh]',   // Prevents it from being taller than the screen
+                    'pb-2'            // Adds a little padding at the bottom
+                );
             }
 
             let typingTimeout;
@@ -1072,7 +1082,8 @@
                 },
                 light: {
                     title: "app.py — VS Code",
-                    text: "from flask import Flask\n\napp = Flask(__name__)\n\n@app.route('/')\ndef init_portfolio():\n    return 'Engineer: Arjunren Von'\n\nif __name__ == '__main__':\n    app.run(port=8080)"
+                    // FIX: Compacted the Python code to take up less vertical space
+                    text: "from flask import Flask\napp = Flask(__name__)\n\n@app.route('/')\ndef init():\n    return 'Engineer: Arjunren Von'\n\nif __name__ == '__main__':\n    app.run(port=80)"
                 }
             };
 
@@ -1098,6 +1109,9 @@
                         // Random typing speed for realistic effect
                         const speed = isDark ? Math.random() * 20 + 20 : Math.random() * 30 + 30;
                         typingTimeout = setTimeout(type, speed);
+
+                        // Auto-scroll to bottom as it types on small screens
+                        typewriterElement.scrollTop = typewriterElement.scrollHeight;
                     } else {
                         // When typing is done, trigger the fade out sequence
                         setTimeout(() => {
@@ -1132,8 +1146,6 @@
             const isInitialDark = document.documentElement.classList.contains('dark');
             runTypewriter(isInitialDark);
 
-            // If user clicks the theme toggle while it's typing, restart with the new theme text
-            // Note: ensure 'themeToggleBtn' is selected somewhere in your script if you haven't already
             const themeToggleBtn = document.getElementById('themeToggle');
 
             if (themeToggleBtn) {
