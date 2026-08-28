@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OWASP Top 10 Addition: Content Security Policy to mitigate XSS -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:;">
     <title>Arjunren Von</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./images/Icon.png" />
@@ -142,7 +144,7 @@
                         </a>
 
                         <!-- GitHub -->
-                        <a href="https://github.com/Arjunren" target="_blank"
+                        <a href="https://github.com/Arjunren" target="_blank" rel="noopener noreferrer"
                             class="flex items-center gap-1.5 sm:gap-2 border border-gray-200 dark:border-gray-700 bg-white dark:bg-darkCard text-gray-700 dark:text-gray-300 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold hover:border-gray-800 dark:hover:border-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md">
                             <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 24 24">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -153,7 +155,7 @@
                         </a>
 
                         <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/arjunren-von-valdez-37399b370/" target="_blank"
+                        <a href="https://www.linkedin.com/in/arjunren-von-valdez-37399b370/" target="_blank" rel="noopener noreferrer"
                             class="flex items-center gap-1.5 sm:gap-2 border border-gray-200 dark:border-gray-700 bg-white dark:bg-darkCard text-gray-700 dark:text-gray-300 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold hover:border-[#0A66C2]/50 hover:text-[#0A66C2] dark:hover:text-[#3b82f6] hover:bg-blue-50/50 dark:hover:bg-blue-900/10 hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md">
                             <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#0A66C2] dark:text-[#3b82f6] grayscale group-hover:grayscale-0 transition-all"
                                 fill="currentColor" viewBox="0 0 24 24">
@@ -267,12 +269,12 @@
                             Frontend
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-orange-400/50 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-600 dark:hover:text-orange-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">HTML</a>
-                            <a href="https://tailwindcss.com/" target="_blank"
+                            <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-teal-400/50 hover:bg-teal-50 dark:hover:bg-teal-900/20 hover:text-teal-600 dark:hover:text-teal-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Tailwind
                                 CSS</a>
-                            <a href="https://react.dev/" target="_blank"
+                            <a href="https://react.dev/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-400/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">React.js</a>
                         </div>
                     </div>
@@ -289,17 +291,17 @@
                             Backend
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <a href="https://dev.java/" target="_blank"
+                            <a href="https://dev.java/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-400/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Java</a>
-                            <a href="https://www.python.org/" target="_blank"
+                            <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-400/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Python</a>
-                            <a href="https://www.php.net/" target="_blank"
+                            <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-purple-400/50 hover:bg-purple-50 dark:hover:bg-purple-900/20 hover:text-purple-600 dark:hover:text-purple-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">PHP</a>
-                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank"
+                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-green-400/50 hover:bg-green-50 dark:hover:bg-green-900/20 hover:text-green-600 dark:hover:text-green-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">C#</a>
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-yellow-400/50 hover:bg-yellow-50 dark:hover:bg-yellow-900/20 hover:text-yellow-600 dark:hover:text-yellow-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">JavaScript</a>
-                            <a href="https://dotnet.microsoft.com/en-us/apps/maui" target="_blank"
+                            <a href="https://dotnet.microsoft.com/en-us/apps/maui" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-purple-400/50 hover:bg-purple-50 dark:hover:bg-purple-900/20 hover:text-purple-600 dark:hover:text-purple-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">.NET
                                 MAUI</a>
                         </div>
@@ -317,11 +319,11 @@
                             DevOps & Cloud
                         </h3>
                         <div class="flex flex-wrap gap-2">
-                            <a href="https://aws.amazon.com/" target="_blank"
+                            <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-orange-400/50 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-600 dark:hover:text-orange-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">AWS</a>
-                            <a href="https://azure.microsoft.com/" target="_blank"
+                            <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-400/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">AZURE</a>
-                            <a href="https://www.docker.com/" target="_blank"
+                            <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer"
                                 class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-700 dark:hover:text-blue-500 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">DOCKER</a>
                         </div>
                     </div>
@@ -342,27 +344,27 @@
                                 Cybersecurity & Pentesting
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://nmap.org/" target="_blank"
+                                <a href="https://nmap.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Nmap</a>
-                                <a href="https://www.wireshark.org/" target="_blank"
+                                <a href="https://www.wireshark.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Wireshark</a>
-                                <a href="https://portswigger.net/burp" target="_blank"
+                                <a href="https://portswigger.net/burp" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Burp
                                     Suite</a>
-                                <a href="https://www.metasploit.com/" target="_blank"
+                                <a href="https://www.metasploit.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Metasploit</a>
-                                <a href="https://www.aircrack-ng.org/" target="_blank"
+                                <a href="https://www.aircrack-ng.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Aircrack-ng</a>
-                                <a href="https://sqlmap.org/" target="_blank"
+                                <a href="https://sqlmap.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Sqlmap</a>
-                                <a href="https://github.com/vanhauser-thc/thc-hydra" target="_blank"
+                                <a href="https://github.com/vanhauser-thc/thc-hydra" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Hydra</a>
-                                <a href="https://www.openwall.com/john/" target="_blank"
+                                <a href="https://www.openwall.com/john/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">John
                                     the Ripper</a>
-                                <a href="https://hashcat.net/" target="_blank"
+                                <a href="https://hashcat.net/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Hashcat</a>
-                                <a href="https://www.zaproxy.org/" target="_blank"
+                                <a href="https://www.zaproxy.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">OWASP
                                     ZAP</a>
                             </div>
@@ -380,15 +382,15 @@
                                 Operating Systems
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://www.kali.org/" target="_blank"
+                                <a href="https://www.kali.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-slate-400/50 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:text-slate-800 dark:hover:text-white hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Kali
                                     Linux</a>
-                                <a href="https://parrotsec.org/" target="_blank"
+                                <a href="https://parrotsec.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-cyan-500/50 hover:bg-cyan-50 dark:hover:bg-cyan-900/20 hover:text-cyan-600 dark:hover:text-cyan-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Parrot
                                     OS</a>
-                                <a href="https://www.microsoft.com/windows" target="_blank"
+                                <a href="https://www.microsoft.com/windows" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Windows</a>
-                                <a href="https://ubuntu.com/server" target="_blank"
+                                <a href="https://ubuntu.com/server" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-orange-500/50 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-600 dark:hover:text-orange-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Ubuntu
                                     Server</a>
                             </div>
@@ -406,9 +408,9 @@
                                 Virtualization
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://www.vmware.com/" target="_blank"
+                                <a href="https://www.vmware.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">VMware</a>
-                                <a href="https://www.virtualbox.org/" target="_blank"
+                                <a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-500/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Oracle
                                     VM VirtualBox</a>
                             </div>
@@ -426,17 +428,17 @@
                                 Hosting & Deployment
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://vercel.com/" target="_blank"
+                                <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-800/50 hover:text-black dark:hover:text-white hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Vercel</a>
-                                <a href="https://www.netlify.com/" target="_blank"
+                                <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-teal-400/50 hover:bg-teal-50 dark:hover:bg-teal-900/20 hover:text-teal-600 dark:hover:text-teal-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Netlify</a>
-                                <a href="https://www.pythonanywhere.com/" target="_blank"
+                                <a href="https://www.pythonanywhere.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-yellow-400/50 hover:bg-yellow-50 dark:hover:bg-yellow-900/20 hover:text-yellow-600 dark:hover:text-yellow-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">PythonAnywhere</a>
-                                <a href="https://www.hostinger.com/" target="_blank"
+                                <a href="https://www.hostinger.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-violet-400/50 hover:bg-violet-50 dark:hover:bg-violet-900/20 hover:text-violet-600 dark:hover:text-violet-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Hostinger</a>
-                                <a href="https://render.com/" target="_blank"
+                                <a href="https://render.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-400/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Render</a>
-                                <a href="https://railway.app/" target="_blank"
+                                <a href="https://railway.app/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-indigo-400/50 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 hover:text-indigo-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Railway</a>
                             </div>
                         </div>
@@ -452,22 +454,22 @@
                                 Developer Tools
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://code.visualstudio.com/" target="_blank"
+                                <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-400/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">VS
                                     Code</a>
-                                <a href="https://visualstudio.microsoft.com/" target="_blank"
+                                <a href="https://visualstudio.microsoft.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-orange-400/50 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-600 dark:hover:text-orange-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Visual
                                     Studio 2022</a>
-                                <a href="https://git-scm.com/" target="_blank"
+                                <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-gray-400/50 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Git</a>
-                                <a href="https://developer.android.com/studio" target="_blank"
+                                <a href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-green-400/50 hover:bg-green-50 dark:hover:bg-green-900/20 hover:text-green-600 dark:hover:text-green-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Android
                                     Studio</a>
-                                <a href="https://www.apachefriends.org/" target="_blank"
+                                <a href="https://www.apachefriends.org/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-orange-400/50 hover:bg-orange-50 dark:hover:bg-orange-900/20 hover:text-orange-600 dark:hover:text-orange-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">XAMPP</a>
-                                <a href="https://www.arduino.cc/" target="_blank"
+                                <a href="https://www.arduino.cc/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-teal-400/50 hover:bg-teal-50 dark:hover:bg-teal-900/20 hover:text-teal-600 dark:hover:text-teal-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Arduino</a>
-                                <a href="https://www.mysql.com/" target="_blank"
+                                <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer"
                                     class="px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-gray-400/50 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-black dark:hover:text-white hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">MySQL</a>
                             </div>
                         </div>
@@ -484,7 +486,7 @@
                                 Networking
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://www.netacad.com/courses/packet-tracer" target="_blank"
+                                <a href="https://www.netacad.com/courses/packet-tracer" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-400/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -494,7 +496,7 @@
                                     </svg>
                                     Packet Tracer
                                 </a>
-                                <a href="https://www.tp-link.com/" target="_blank"
+                                <a href="https://www.tp-link.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-teal-400/50 hover:bg-teal-50 dark:hover:bg-teal-900/20 hover:text-teal-600 dark:hover:text-teal-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -504,7 +506,7 @@
                                     </svg>
                                     TP-Link
                                 </a>
-                                <a href="https://en.wikipedia.org/wiki/Network_switch" target="_blank"
+                                <a href="https://en.wikipedia.org/wiki/Network_switch" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-purple-400/50 hover:bg-purple-50 dark:hover:bg-purple-900/20 hover:text-purple-600 dark:hover:text-purple-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -514,7 +516,7 @@
                                     </svg>
                                     Network Switch
                                 </a>
-                                <a href="https://en.wikipedia.org/wiki/Optical_fiber" target="_blank"
+                                <a href="https://en.wikipedia.org/wiki/Optical_fiber" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-pink-400/50 hover:bg-pink-50 dark:hover:bg-pink-900/20 hover:text-pink-600 dark:hover:text-pink-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -523,7 +525,7 @@
                                     </svg>
                                     Optic Fiber
                                 </a>
-                                <a href="https://www.fortinet.com/" target="_blank"
+                                <a href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-amber-400/50 hover:bg-amber-50 dark:hover:bg-amber-900/20 hover:text-amber-600 dark:hover:text-amber-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -532,7 +534,7 @@
                                     </svg>
                                     Fortinet
                                 </a>
-                                <a href="https://mikrotik.com/" target="_blank"
+                                <a href="https://mikrotik.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-green-400/50 hover:bg-green-50 dark:hover:bg-green-900/20 hover:text-green-600 dark:hover:text-green-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -541,7 +543,7 @@
                                     </svg>
                                     MikroTik
                                 </a>
-                                <a href="https://www.ruijienetworks.com/" target="_blank"
+                                <a href="https://www.ruijienetworks.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-purple-400/50 hover:bg-purple-50 dark:hover:bg-purple-900/20 hover:text-purple-600 dark:hover:text-purple-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -550,7 +552,7 @@
                                     </svg>
                                     Ruijie
                                 </a>
-                                <a href="https://www.draytek.com/" target="_blank"
+                                <a href="https://www.draytek.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-red-400/50 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-600 dark:hover:text-red-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -559,7 +561,7 @@
                                     </svg>
                                     Draytek
                                 </a>
-                                <a href="https://ui.com/" target="_blank"
+                                <a href="https://ui.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-blue-400/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -568,7 +570,7 @@
                                     </svg>
                                     Ubiquiti
                                 </a>
-                                <a href="https://www.ruijienetworks.com/products/reyee" target="_blank"
+                                <a href="https://www.ruijienetworks.com/products/reyee" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-indigo-400/50 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 hover:text-indigo-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">
                                     <svg class="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity"
                                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -592,11 +594,11 @@
                                 PABX & Telephony
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://www.yeastar.com/" target="_blank"
+                                <a href="https://www.yeastar.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-indigo-400/50 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 hover:text-indigo-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Yeastar</a>
-                                <a href="https://www.nec.com/" target="_blank"
+                                <a href="https://www.nec.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-indigo-400/50 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 hover:text-indigo-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">NEC</a>
-                                <a href="https://www.shenou.com/" target="_blank"
+                                <a href="https://www.shenou.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-indigo-400/50 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 hover:text-indigo-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Shenou</a>
                             </div>
                         </div>
@@ -613,9 +615,9 @@
                                 CCTV & Surveillance
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://www.hikvision.com/" target="_blank"
+                                <a href="https://www.hikvision.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-rose-400/50 hover:bg-rose-50 dark:hover:bg-rose-900/20 hover:text-rose-600 dark:hover:text-rose-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Hikvision</a>
-                                <a href="https://www.dahuasecurity.com/" target="_blank"
+                                <a href="https://www.dahuasecurity.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-rose-400/50 hover:bg-rose-50 dark:hover:bg-rose-900/20 hover:text-rose-600 dark:hover:text-rose-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Dahua</a>
                             </div>
                         </div>
@@ -632,19 +634,19 @@
                                 Hardware & IoT
                             </h3>
                             <div class="flex flex-wrap gap-2">
-                                <a href="https://en.wikipedia.org/wiki/Server_(computing)" target="_blank"
+                                <a href="https://en.wikipedia.org/wiki/Server_(computing)" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-emerald-400/50 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Local
                                     Server</a>
-                                <a href="https://www.raspberrypi.com/" target="_blank"
+                                <a href="https://www.raspberrypi.com/" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-emerald-400/50 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Raspberry
                                     Pi</a>
-                                <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank"
+                                <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-emerald-400/50 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">ESP32</a>
-                                <a href="https://store.arduino.cc/products/arduino-uno-rev3" target="_blank"
+                                <a href="https://store.arduino.cc/products/arduino-uno-rev3" target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-emerald-400/50 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">Arduino
                                     Uno</a>
                                 <a href="https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide"
-                                    target="_blank"
+                                    target="_blank" rel="noopener noreferrer"
                                     class="group flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 dark:bg-[#111] rounded-lg text-xs font-medium border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 hover:border-emerald-400/50 hover:bg-emerald-50 dark:hover:bg-emerald-900/20 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-300 cursor-pointer">HX711</a>
                             </div>
                         </div>
@@ -674,13 +676,13 @@
                             </svg>
                             Github Repositories
                         </h2>
-                        <a href="https://github.com/Arjunren?tab=repositories" target="_blank"
+                        <a href="https://github.com/Arjunren?tab=repositories" target="_blank" rel="noopener noreferrer"
                             class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline">View All</a>
                     </div>
 
                     <!-- Repositories Grid -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <a href="https://github.com/Arjunren/PostMan" target="_blank"
+                        <a href="https://github.com/Arjunren/PostMan" target="_blank" rel="noopener noreferrer"
                             class="group p-5 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-orange-500/50 dark:hover:border-orange-500/50 hover:shadow-md transition-all bg-gray-50/50 dark:bg-[#111] flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center gap-2 mb-2">
@@ -705,7 +707,7 @@
                                         class="w-3 h-3 rounded-full bg-orange-500"></span> HTML</span>
                             </div>
                         </a>
-                        <a href="https://github.com/Arjunren/Prism_CSS_Toolkit" target="_blank"
+                        <a href="https://github.com/Arjunren/Prism_CSS_Toolkit" target="_blank" rel="noopener noreferrer"
                             class="group p-5 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-orange-500/50 dark:hover:border-orange-500/50 hover:shadow-md transition-all bg-gray-50/50 dark:bg-[#111] flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center gap-2 mb-2">
@@ -731,7 +733,7 @@
                                         class="w-3 h-3 rounded-full bg-orange-500"></span> HTML</span>
                             </div>
                         </a>
-                        <a href="https://github.com/Arjunren/ElitePlus" target="_blank"
+                        <a href="https://github.com/Arjunren/ElitePlus" target="_blank" rel="noopener noreferrer"
                             class="group p-5 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-yellow-400/50 dark:hover:border-yellow-400/50 hover:shadow-md transition-all bg-gray-50/50 dark:bg-[#111] flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center gap-2 mb-2">
@@ -757,7 +759,7 @@
                                         class="w-3 h-3 rounded-full bg-yellow-400"></span> JavaScript</span>
                             </div>
                         </a>
-                        <a href="https://github.com/Arjunren/EliteMinus" target="_blank"
+                        <a href="https://github.com/Arjunren/EliteMinus" target="_blank" rel="noopener noreferrer"
                             class="group p-5 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-yellow-400/50 dark:hover:border-yellow-400/50 hover:shadow-md transition-all bg-gray-50/50 dark:bg-[#111] flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center gap-2 mb-2">
@@ -782,7 +784,7 @@
                                         class="w-3 h-3 rounded-full bg-yellow-400"></span> JavaScript</span>
                             </div>
                         </a>
-                        <a href="https://github.com/Arjunren/Jarvis_V1" target="_blank"
+                        <a href="https://github.com/Arjunren/Jarvis_V1" target="_blank" rel="noopener noreferrer"
                             class="group p-5 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-md transition-all bg-gray-50/50 dark:bg-[#111] flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center gap-2 mb-2">
@@ -807,7 +809,7 @@
                                         class="w-3 h-3 rounded-full bg-blue-500"></span> Python</span>
                             </div>
                         </a>
-                        <a href="https://github.com/Arjunren/WAL_Software_Solution" target="_blank"
+                        <a href="https://github.com/Arjunren/WAL_Software_Solution" target="_blank" rel="noopener noreferrer"
                             class="group p-5 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-md transition-all bg-gray-50/50 dark:bg-[#111] flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center gap-2 mb-2">
@@ -964,32 +966,116 @@
                         Certificate
                     </h2>
 
-                    <div
-                        class="flex flex-col bg-gray-50 dark:bg-[#111] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm transition-all hover:shadow-md">
+                    <div class="space-y-4">
+                        <!-- Original Harvard Certificate -->
                         <div
-                            class="w-full h-auto flex-shrink-0 border-b border-gray-200 dark:border-gray-700 bg-gray-200 dark:bg-gray-800">
-                            <img src="./images/CS50P_Certificate.png" alt="CS50 Certificate"
-                                class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
-                        </div>
-                        <div class="p-5 sm:p-6 flex flex-col flex-grow">
-                            <div class="flex items-center gap-3 mb-3">
-                                <img src="https://www.harvard.edu/wp-content/uploads/2020/10/cropped-logo-branding-compressed.png?w=192"
-                                    alt="Harvard Logo" class="w-8 h-8 drop-shadow-sm">
-                                <span class="text-sm font-bold text-gray-700 dark:text-gray-300">Harvard
-                                    University</span>
+                            class="flex flex-col bg-gray-50 dark:bg-[#111] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm transition-all hover:shadow-md">
+                            <div
+                                class="w-full h-auto flex-shrink-0 border-b border-gray-200 dark:border-gray-700 bg-gray-200 dark:bg-gray-800">
+                                <img src="./images/Harvard_Certificate_CS50.png" alt="CS50 Certificate"
+                                    class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
                             </div>
-                            <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-6">CS50's
-                                Introduction to Programming with Python</h3>
-                            <a href="https://cs50.harvard.edu/certificates/2a3460b2-32b6-4879-9568-75859aad737a"
-                                target="_blank"
-                                class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold uppercase tracking-wider py-2 px-5 rounded-lg w-full sm:w-fit transition-colors shadow-md mt-auto">
-                                Verify Credential
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
-                                    </path>
-                                </svg>
-                            </a>
+                            <div class="p-5 sm:p-6 flex flex-col flex-grow">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <img src="https://www.harvard.edu/wp-content/uploads/2020/10/cropped-logo-branding-compressed.png?w=192"
+                                        alt="Harvard Logo" class="w-8 h-8 drop-shadow-sm">
+                                    <span class="text-sm font-bold text-gray-700 dark:text-gray-300">Harvard
+                                        University</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-6">CS50's
+                                    Introduction to Programming with Python</h3>
+                                <a href="https://cs50.harvard.edu/certificates/2a3460b2-32b6-4879-9568-75859aad737a"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold uppercase tracking-wider py-2 px-5 rounded-lg w-full sm:w-fit transition-colors shadow-md mt-auto">
+                                    Verify Credential
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Appkademiya CWPT Certificate -->
+                        <div class="flex flex-col bg-gray-50 dark:bg-[#111] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm transition-all hover:shadow-md">
+                            <div class="w-full h-auto flex-shrink-0 border-b border-gray-200 dark:border-gray-700 bg-gray-200 dark:bg-gray-800">
+                                <img src="./images/Appkademiya_Certificate_CWPT_A4.png" alt="CWPT Certificate" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-5 sm:p-6 flex flex-col flex-grow">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span class="text-sm font-bold text-gray-700 dark:text-gray-300">Appkademiya</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Certified Web Penetration Tester (CWPT)</h3>
+                            </div>
+                        </div>
+
+                        <!-- OPSWAT CIP Certificate -->
+                        <div class="flex flex-col bg-gray-50 dark:bg-[#111] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm transition-all hover:shadow-md">
+                            <div class="w-full h-auto flex-shrink-0 border-b border-gray-200 dark:border-gray-700 bg-gray-200 dark:bg-gray-800">
+                                <img src="./images/OPSWAT_Certificate_CIP_A4.png" alt="OPSWAT CIP Certificate" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-5 sm:p-6 flex flex-col flex-grow">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span class="text-sm font-bold text-gray-700 dark:text-gray-300">OPSWAT Academy</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Critical Infrastructure Protection (CIP)</h3>
+                            </div>
+                        </div>
+
+                        <!-- Appkademiya NetOps Certificate -->
+                        <div class="flex flex-col bg-gray-50 dark:bg-[#111] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm transition-all hover:shadow-md">
+                            <div class="w-full h-auto flex-shrink-0 border-b border-gray-200 dark:border-gray-700 bg-gray-200 dark:bg-gray-800">
+                                <img src="./images/Appkademiya_Certificate_NetOps_A4.png" alt="NetOps Certificate" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-5 sm:p-6 flex flex-col flex-grow">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span class="text-sm font-bold text-gray-700 dark:text-gray-300">Appkademiya</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Network Operations Specialist (NetOps)</h3>
+                            </div>
+                        </div>
+
+                        <!-- Appkademiya ITSupport Certificate -->
+                        <div class="flex flex-col bg-gray-50 dark:bg-[#111] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm transition-all hover:shadow-md">
+                            <div class="w-full h-auto flex-shrink-0 border-b border-gray-200 dark:border-gray-700 bg-gray-200 dark:bg-gray-800">
+                                <img src="./images/Appkademiya_Certificate_ITSupport_A4.png" alt="IT Support Certificate" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-5 sm:p-6 flex flex-col flex-grow">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span class="text-sm font-bold text-gray-700 dark:text-gray-300">Appkademiya</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">IT Support Professional</h3>
+                            </div>
+                        </div>
+
+                        <!-- Appkademiya CCP Certificate -->
+                        <div class="flex flex-col bg-gray-50 dark:bg-[#111] rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm transition-all hover:shadow-md">
+                            <div class="w-full h-auto flex-shrink-0 border-b border-gray-200 dark:border-gray-700 bg-gray-200 dark:bg-gray-800">
+                                <img src="./images/Appkademiya_Certificate_CCP_A4.png" alt="CCP Certificate" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-5 sm:p-6 flex flex-col flex-grow">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <span class="text-sm font-bold text-gray-700 dark:text-gray-300">Appkademiya</span>
+                                </div>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Certified Cloud Practitioner (CCP)</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Verified Learning Badge Section -->
+                    <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+                        <h3 class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-5 text-center flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            Verified by Industry-Leading Platforms
+                        </h3>
+                        <div class="flex flex-wrap justify-center items-center gap-8 opacity-75 grayscale hover:grayscale-0 transition-all duration-500">
+                            <img src="https://www.harvard.edu/wp-content/uploads/2020/10/cropped-logo-branding-compressed.png?w=192" alt="Harvard University" class="h-8 object-contain">
+                            <div class="text-xl font-black tracking-tighter text-gray-800 dark:text-gray-200">OPSWAT.</div>
+                            <div class="text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-1.5">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9z"/></svg>
+                                Appkademiya
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -1141,8 +1227,6 @@
 
             const isInitialDark = document.documentElement.classList.contains('dark');
             runTypewriter(isInitialDark);
-
-            const themeToggleBtn = document.getElementById('themeToggle');
 
             if (themeToggleBtn) {
                 themeToggleBtn.addEventListener('click', () => {
