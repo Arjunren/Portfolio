@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <!-- Background (Optional: remove the <rect> line if you want it to be transparent) -->
+  <rect width="100%" height="100%" fill="#121212"/>
+
+  <!-- Main 'A' / Chevron Icon -->
+  <path d="M 200 60 L 110 190 L 145 190 L 200 110 L 255 190 L 290 190 Z" fill="#002171"/>
+
+  <!-- Text -->
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" letter-spacing="-0.5">
+    <tspan fill="#0066ff">^ppkademiya</tspan>
+  </text>
+</svg>
